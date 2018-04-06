@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2112BFCD2076DA0D00BD3503 /* ExampleNonSelectableTableSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112BFCC2076DA0D00BD3503 /* ExampleNonSelectableTableSpace.swift */; };
+		2112BFD02077C7B100BD3503 /* DataSourceConformingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112BFCE2077C7AE00BD3503 /* DataSourceConformingTests.swift */; };
+		214E739C206821D500D5A6EC /* DelegateConformingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214E739B206821D500D5A6EC /* DelegateConformingTests.swift */; };
+		21509A022076CCA800A7E765 /* ExampleDefaultTableSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21509A012076CCA800A7E765 /* ExampleDefaultTableSpace.swift */; };
+		21509A052076CD0C00A7E765 /* ExampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21509A032076CD0C00A7E765 /* ExampleTableViewCell.swift */; };
+		21509A062076CD0C00A7E765 /* ExampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21509A042076CD0C00A7E765 /* ExampleTableViewCell.xib */; };
+		21509A092076CE6A00A7E765 /* ViewControllerTableSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21509A082076CE6A00A7E765 /* ViewControllerTableSource.swift */; };
+		21509A0E2076D13D00A7E765 /* ExampleSelectableTableSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21509A0D2076D13D00A7E765 /* ExampleSelectableTableSpace.swift */; };
+		21509A132076D2C600A7E765 /* ExampleHeaderTableSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21509A122076D2C600A7E765 /* ExampleHeaderTableSpace.swift */; };
+		21509A152076D32D00A7E765 /* ExampleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21509A142076D32D00A7E765 /* ExampleHeaderView.swift */; };
+		21509A172076D39800A7E765 /* ExampleHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21509A162076D39800A7E765 /* ExampleHeaderView.xib */; };
+		21CB4D332061A7400065FE0F /* SwiftTableSpaceDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CB4D312061A65C0065FE0F /* SwiftTableSpaceDataSourceTests.swift */; };
+		21CB4D3B2061B4980065FE0F /* SwiftTableSpaceSourceDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CB4D3A2061B4980065FE0F /* SwiftTableSpaceSourceDouble.swift */; };
+		21CB4D3C2061B5130065FE0F /* SwiftTableSpaceDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CB4D382061B2BF0065FE0F /* SwiftTableSpaceDouble.swift */; };
+		21CB4D3E2062E3FC0065FE0F /* SwiftTableSpaceManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CB4D3D2062E3FC0065FE0F /* SwiftTableSpaceManagerTests.swift */; };
+		21CB4D4A2065BB240065FE0F /* SwiftTableSpaceDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CB4D492065BB240065FE0F /* SwiftTableSpaceDelegateTests.swift */; };
+		21CB4D512068130F0065FE0F /* SwiftTableSpaceConformingDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CB4D502068130F0065FE0F /* SwiftTableSpaceConformingDouble.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -29,6 +46,23 @@
 
 /* Begin PBXFileReference section */
 		1E7E762E9ECDBE17E134BA6A /* Pods-SwiftTableSpaces_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTableSpaces_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftTableSpaces_Tests/Pods-SwiftTableSpaces_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2112BFCC2076DA0D00BD3503 /* ExampleNonSelectableTableSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleNonSelectableTableSpace.swift; sourceTree = "<group>"; };
+		2112BFCE2077C7AE00BD3503 /* DataSourceConformingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceConformingTests.swift; sourceTree = "<group>"; };
+		214E739B206821D500D5A6EC /* DelegateConformingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateConformingTests.swift; sourceTree = "<group>"; };
+		21509A012076CCA800A7E765 /* ExampleDefaultTableSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleDefaultTableSpace.swift; sourceTree = "<group>"; };
+		21509A032076CD0C00A7E765 /* ExampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTableViewCell.swift; sourceTree = "<group>"; };
+		21509A042076CD0C00A7E765 /* ExampleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleTableViewCell.xib; sourceTree = "<group>"; };
+		21509A082076CE6A00A7E765 /* ViewControllerTableSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTableSource.swift; sourceTree = "<group>"; };
+		21509A0D2076D13D00A7E765 /* ExampleSelectableTableSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleSelectableTableSpace.swift; sourceTree = "<group>"; };
+		21509A122076D2C600A7E765 /* ExampleHeaderTableSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleHeaderTableSpace.swift; sourceTree = "<group>"; };
+		21509A142076D32D00A7E765 /* ExampleHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleHeaderView.swift; sourceTree = "<group>"; };
+		21509A162076D39800A7E765 /* ExampleHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleHeaderView.xib; sourceTree = "<group>"; };
+		21CB4D312061A65C0065FE0F /* SwiftTableSpaceDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTableSpaceDataSourceTests.swift; sourceTree = "<group>"; };
+		21CB4D382061B2BF0065FE0F /* SwiftTableSpaceDouble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTableSpaceDouble.swift; sourceTree = "<group>"; };
+		21CB4D3A2061B4980065FE0F /* SwiftTableSpaceSourceDouble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTableSpaceSourceDouble.swift; sourceTree = "<group>"; };
+		21CB4D3D2062E3FC0065FE0F /* SwiftTableSpaceManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTableSpaceManagerTests.swift; sourceTree = "<group>"; };
+		21CB4D492065BB240065FE0F /* SwiftTableSpaceDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTableSpaceDelegateTests.swift; sourceTree = "<group>"; };
+		21CB4D502068130F0065FE0F /* SwiftTableSpaceConformingDouble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTableSpaceConformingDouble.swift; sourceTree = "<group>"; };
 		2DD80FA5E96943778A936B79 /* Pods_SwiftTableSpaces_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftTableSpaces_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* SwiftTableSpaces_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTableSpaces_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,12 +74,12 @@
 		607FACE51AFB9204008FA782 /* SwiftTableSpaces_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTableSpaces_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		7385FFA4A2E761123DE876D0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7385FFA4A2E761123DE876D0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		7D2F2777138D114B94B99CBD /* Pods-SwiftTableSpaces_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTableSpaces_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftTableSpaces_Example/Pods-SwiftTableSpaces_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9F8FA227D5081EE387FC8ED9 /* Pods_SwiftTableSpaces_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftTableSpaces_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9FD37BA984B6170C0949D60A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9FD37BA984B6170C0949D60A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A32BC3FD16DA2D7A3C58BCE0 /* Pods-SwiftTableSpaces_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTableSpaces_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftTableSpaces_Tests/Pods-SwiftTableSpaces_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		EC866CC2228EAEA0FC008299 /* SwiftTableSpaces.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SwiftTableSpaces.podspec; path = ../SwiftTableSpaces.podspec; sourceTree = "<group>"; };
+		EC866CC2228EAEA0FC008299 /* SwiftTableSpaces.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftTableSpaces.podspec; path = ../SwiftTableSpaces.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FBEB9A64CB9477DEF1029136 /* Pods-SwiftTableSpaces_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTableSpaces_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftTableSpaces_Example/Pods-SwiftTableSpaces_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +103,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2112BFD4207804F200BD3503 /* DataSourceTests */ = {
+			isa = PBXGroup;
+			children = (
+				2112BFCE2077C7AE00BD3503 /* DataSourceConformingTests.swift */,
+			);
+			name = DataSourceTests;
+			sourceTree = "<group>";
+		};
+		214E739A2068216A00D5A6EC /* DelegateTests */ = {
+			isa = PBXGroup;
+			children = (
+				21CB4D492065BB240065FE0F /* SwiftTableSpaceDelegateTests.swift */,
+				214E739B206821D500D5A6EC /* DelegateConformingTests.swift */,
+			);
+			name = DelegateTests;
+			sourceTree = "<group>";
+		};
+		21509A072076CDF100A7E765 /* PlainExample */ = {
+			isa = PBXGroup;
+			children = (
+				21509A012076CCA800A7E765 /* ExampleDefaultTableSpace.swift */,
+				21509A032076CD0C00A7E765 /* ExampleTableViewCell.swift */,
+				21509A042076CD0C00A7E765 /* ExampleTableViewCell.xib */,
+			);
+			name = PlainExample;
+			sourceTree = "<group>";
+		};
+		21509A0A2076D10600A7E765 /* SelectableExample */ = {
+			isa = PBXGroup;
+			children = (
+				21509A0D2076D13D00A7E765 /* ExampleSelectableTableSpace.swift */,
+			);
+			name = SelectableExample;
+			sourceTree = "<group>";
+		};
+		21509A112076D2B500A7E765 /* HeaderExample */ = {
+			isa = PBXGroup;
+			children = (
+				21509A122076D2C600A7E765 /* ExampleHeaderTableSpace.swift */,
+				21509A142076D32D00A7E765 /* ExampleHeaderView.swift */,
+				21509A162076D39800A7E765 /* ExampleHeaderView.xib */,
+			);
+			name = HeaderExample;
+			sourceTree = "<group>";
+		};
+		21509A182076D9A000A7E765 /* NonSelectableExample */ = {
+			isa = PBXGroup;
+			children = (
+				2112BFCC2076DA0D00BD3503 /* ExampleNonSelectableTableSpace.swift */,
+			);
+			name = NonSelectableExample;
+			sourceTree = "<group>";
+		};
+		21CB4D342061B2220065FE0F /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				21CB4D3A2061B4980065FE0F /* SwiftTableSpaceSourceDouble.swift */,
+				21CB4D382061B2BF0065FE0F /* SwiftTableSpaceDouble.swift */,
+				21CB4D502068130F0065FE0F /* SwiftTableSpaceConformingDouble.swift */,
+			);
+			name = Doubles;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +192,11 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				21509A082076CE6A00A7E765 /* ViewControllerTableSource.swift */,
+				21509A182076D9A000A7E765 /* NonSelectableExample */,
+				21509A112076D2B500A7E765 /* HeaderExample */,
+				21509A0A2076D10600A7E765 /* SelectableExample */,
+				21509A072076CDF100A7E765 /* PlainExample */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -115,7 +217,12 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				21CB4D342061B2220065FE0F /* Doubles */,
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				21CB4D312061A65C0065FE0F /* SwiftTableSpaceDataSourceTests.swift */,
+				2112BFD4207804F200BD3503 /* DataSourceTests */,
+				214E739A2068216A00D5A6EC /* DelegateTests */,
+				21CB4D3D2062E3FC0065FE0F /* SwiftTableSpaceManagerTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -248,6 +355,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21509A062076CD0C00A7E765 /* ExampleTableViewCell.xib in Resources */,
+				21509A172076D39800A7E765 /* ExampleHeaderView.xib in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
@@ -375,7 +484,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21509A052076CD0C00A7E765 /* ExampleTableViewCell.swift in Sources */,
+				21509A132076D2C600A7E765 /* ExampleHeaderTableSpace.swift in Sources */,
+				21509A152076D32D00A7E765 /* ExampleHeaderView.swift in Sources */,
+				21509A092076CE6A00A7E765 /* ViewControllerTableSource.swift in Sources */,
+				21509A0E2076D13D00A7E765 /* ExampleSelectableTableSpace.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				2112BFCD2076DA0D00BD3503 /* ExampleNonSelectableTableSpace.swift in Sources */,
+				21509A022076CCA800A7E765 /* ExampleDefaultTableSpace.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,7 +500,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21CB4D512068130F0065FE0F /* SwiftTableSpaceConformingDouble.swift in Sources */,
+				21CB4D332061A7400065FE0F /* SwiftTableSpaceDataSourceTests.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				21CB4D3C2061B5130065FE0F /* SwiftTableSpaceDouble.swift in Sources */,
+				21CB4D3B2061B4980065FE0F /* SwiftTableSpaceSourceDouble.swift in Sources */,
+				21CB4D4A2065BB240065FE0F /* SwiftTableSpaceDelegateTests.swift in Sources */,
+				21CB4D3E2062E3FC0065FE0F /* SwiftTableSpaceManagerTests.swift in Sources */,
+				2112BFD02077C7B100BD3503 /* DataSourceConformingTests.swift in Sources */,
+				214E739C206821D500D5A6EC /* DelegateConformingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,7 +647,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftTableSpaces/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -538,7 +662,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftTableSpaces/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -560,7 +684,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -577,7 +701,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
