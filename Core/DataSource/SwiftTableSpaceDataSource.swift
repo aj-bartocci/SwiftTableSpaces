@@ -25,24 +25,6 @@ class SwiftTableSpaceDataSource: NSObject, UITableViewDataSource {
         // should this really throw an error?
         return space?.cell(forRowAt: indexPath, in: tableView) ?? UITableViewCell()
     }
-
-//    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-//        let sections = sectionSource?.sections(in: tableView)
-//        let section = sections?[indexPath.section] as? TableSpaceEditable
-//        section?.commitEditingStyle(editingStyle: editingStyle, forRowAt: indexPath, in: tableView)
-//    }
-//
-//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//        let sections = sectionSource?.sections(in: tableView    )
-//        let sec = sections?[section] as? TableSpaceDefaultHeaderTitleable
-//        return sec?.defaultHeaderTitle(in: tableView)
-//    }
-//
-//    func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-//        let sections = sectionSource?.sections(in: tableView)
-//        let sec = sections?[section] as? TableSpaceDefaultFooterTitleable
-//        return sec?.defaultFooterTitle(in: tableView)
-//    }
     
     // ----------------
     
@@ -90,15 +72,8 @@ extension SwiftTableSpaceDataSource {
         return space?.titleForDefaultHeader(in: tableView)
     }
     
-//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//        let sections = sectionSource?.sections(in: tableView    )
-//        let sec = sections?[section] as? TableSpaceDefaultHeaderTitleable
-//        return sec?.defaultHeaderTitle(in: tableView)
-//    }
-//
-//    func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-//        let sections = sectionSource?.sections(in: tableView)
-//        let sec = sections?[section] as? TableSpaceDefaultFooterTitleable
-//        return sec?.defaultFooterTitle(in: tableView)
-//    }
+    func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        let space = spaceSource?.space(in: tableView, for: section) as? SwiftTableSpaceDefaultFooterTitleable
+        return space?.titleForDefaultFooter(in: tableView)
+    }
 }

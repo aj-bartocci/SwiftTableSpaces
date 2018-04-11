@@ -12,7 +12,7 @@ public protocol SwiftTableSpaceDefaultHeaderTitleable: SwiftTableSpaceHeaderSiza
     func titleForDefaultHeader(in tableView: UITableView) -> String?
 }
 
-extension SwiftTableSpaceDefaultHeaderTitleable where Self: SwiftTableSpaceHeaderSizable {
+public extension SwiftTableSpaceDefaultHeaderTitleable {
     
     public func headerHeight(for tableView: UITableView) -> CGFloat {
         return UITableViewAutomaticDimension

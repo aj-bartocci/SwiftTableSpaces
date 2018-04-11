@@ -13,21 +13,26 @@ public protocol SwiftTableSpaceManagerDelegate: class {
 
 public class SwiftTableSpaceManager<Interactor: SwiftTableSpaceInteractor> {
     
-    private let dataSource = SwiftTableSpaceDataSource()
-    private let delegate = SwiftTableSpaceDelegate()
-    fileprivate (set) weak var tableView: UITableView?
-    
-//    fileprivate lazy var keyboardListener = TableSpaceKeyboardListener()
-//    weak var keyboardDelegate: TableSpaceKeyboardListenerDelegate? {
-//        didSet {
-//            keyboardListener.delegate = keyboardDelegate
-//        }
-//    }
-    
+    let dataSource = SwiftTableSpaceDataSource()
+    let delegate = SwiftTableSpaceDelegate()
+    weak var tableView: UITableView?
+        
     public var interactor: Interactor {
         didSet {
             dataSource.spaceSource = interactor
             delegate.spaceSource = interactor
+        }
+    }
+    
+    lazy var keyboardListener = SwiftTableSpaceKeyboardListener()
+    /**
+     Sends events when the keyboard is presented and dismissed
+     
+     Anytime the view is no longer showing the keyboardDelegate associated with that view should be nullified. For example if implemented with a UIViewController it should be nullified in viewWillDisappear and set in viewWillAppear
+    */
+    public weak var keyboardDelegate: SwiftTableSpaceKeyboardListenerDelegate? {
+        didSet {
+            keyboardListener.delegate = keyboardDelegate
         }
     }
     

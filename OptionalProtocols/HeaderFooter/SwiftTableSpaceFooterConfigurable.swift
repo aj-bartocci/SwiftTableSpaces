@@ -12,6 +12,17 @@ public protocol SwiftTableSpaceFooterSizable {
     func estimatedFooterHeight(for tableView: UITableView) -> CGFloat
     /// The height for the footer, returns UITableViewAutomaticDimension by default
     func footerHeight(for tableView: UITableView) -> CGFloat
+    
+    /// Called when a footer view is about to be displayed for the specified section
+    func willDisplayFooter(view: UIView)
+    
+    /// Called when the specified footer view was removed from the table
+    func didEndDisplayingFooter(view: UIView)
+}
+
+public extension SwiftTableSpaceFooterSizable {
+    func willDisplayFooter(view: UIView) { }
+    func didEndDisplayingFooter(view: UIView) { }
 }
 
 public protocol SwiftTableSpaceFooterConfigurable: SwiftTableSpaceFooterSizable {

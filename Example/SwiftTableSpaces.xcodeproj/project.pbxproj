@@ -18,6 +18,8 @@
 		21509A132076D2C600A7E765 /* ExampleHeaderTableSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21509A122076D2C600A7E765 /* ExampleHeaderTableSpace.swift */; };
 		21509A152076D32D00A7E765 /* ExampleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21509A142076D32D00A7E765 /* ExampleHeaderView.swift */; };
 		21509A172076D39800A7E765 /* ExampleHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21509A162076D39800A7E765 /* ExampleHeaderView.xib */; };
+		2169396E207D584E006372C7 /* KeyboardListenerDelegateConformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2169396D207D584D006372C7 /* KeyboardListenerDelegateConformer.swift */; };
+		21693970207D591D006372C7 /* SwiftTableSpaceKeyboardListenerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2169396F207D591D006372C7 /* SwiftTableSpaceKeyboardListenerTests.swift */; };
 		21CB4D332061A7400065FE0F /* SwiftTableSpaceDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CB4D312061A65C0065FE0F /* SwiftTableSpaceDataSourceTests.swift */; };
 		21CB4D3B2061B4980065FE0F /* SwiftTableSpaceSourceDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CB4D3A2061B4980065FE0F /* SwiftTableSpaceSourceDouble.swift */; };
 		21CB4D3C2061B5130065FE0F /* SwiftTableSpaceDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CB4D382061B2BF0065FE0F /* SwiftTableSpaceDouble.swift */; };
@@ -29,7 +31,6 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		6D836B7BC72F9364DBC1227F /* Pods_SwiftTableSpaces_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD80FA5E96943778A936B79 /* Pods_SwiftTableSpaces_Example.framework */; };
 		AE1AA6F0B328D3798D863ABC /* Pods_SwiftTableSpaces_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8FA227D5081EE387FC8ED9 /* Pods_SwiftTableSpaces_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,8 @@
 		21509A122076D2C600A7E765 /* ExampleHeaderTableSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleHeaderTableSpace.swift; sourceTree = "<group>"; };
 		21509A142076D32D00A7E765 /* ExampleHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleHeaderView.swift; sourceTree = "<group>"; };
 		21509A162076D39800A7E765 /* ExampleHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleHeaderView.xib; sourceTree = "<group>"; };
+		2169396D207D584D006372C7 /* KeyboardListenerDelegateConformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardListenerDelegateConformer.swift; sourceTree = "<group>"; };
+		2169396F207D591D006372C7 /* SwiftTableSpaceKeyboardListenerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTableSpaceKeyboardListenerTests.swift; sourceTree = "<group>"; };
 		21CB4D312061A65C0065FE0F /* SwiftTableSpaceDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTableSpaceDataSourceTests.swift; sourceTree = "<group>"; };
 		21CB4D382061B2BF0065FE0F /* SwiftTableSpaceDouble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTableSpaceDouble.swift; sourceTree = "<group>"; };
 		21CB4D3A2061B4980065FE0F /* SwiftTableSpaceSourceDouble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTableSpaceSourceDouble.swift; sourceTree = "<group>"; };
@@ -73,7 +76,6 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* SwiftTableSpaces_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTableSpaces_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7385FFA4A2E761123DE876D0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		7D2F2777138D114B94B99CBD /* Pods-SwiftTableSpaces_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTableSpaces_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftTableSpaces_Example/Pods-SwiftTableSpaces_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9F8FA227D5081EE387FC8ED9 /* Pods_SwiftTableSpaces_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftTableSpaces_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +164,7 @@
 				21CB4D3A2061B4980065FE0F /* SwiftTableSpaceSourceDouble.swift */,
 				21CB4D382061B2BF0065FE0F /* SwiftTableSpaceDouble.swift */,
 				21CB4D502068130F0065FE0F /* SwiftTableSpaceConformingDouble.swift */,
+				2169396D207D584D006372C7 /* KeyboardListenerDelegateConformer.swift */,
 			);
 			name = Doubles;
 			sourceTree = "<group>";
@@ -218,11 +221,11 @@
 			isa = PBXGroup;
 			children = (
 				21CB4D342061B2220065FE0F /* Doubles */,
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				21CB4D312061A65C0065FE0F /* SwiftTableSpaceDataSourceTests.swift */,
+				2169396F207D591D006372C7 /* SwiftTableSpaceKeyboardListenerTests.swift */,
+				21CB4D3D2062E3FC0065FE0F /* SwiftTableSpaceManagerTests.swift */,
 				2112BFD4207804F200BD3503 /* DataSourceTests */,
 				214E739A2068216A00D5A6EC /* DelegateTests */,
-				21CB4D3D2062E3FC0065FE0F /* SwiftTableSpaceManagerTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -500,9 +503,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21693970207D591D006372C7 /* SwiftTableSpaceKeyboardListenerTests.swift in Sources */,
 				21CB4D512068130F0065FE0F /* SwiftTableSpaceConformingDouble.swift in Sources */,
+				2169396E207D584E006372C7 /* KeyboardListenerDelegateConformer.swift in Sources */,
 				21CB4D332061A7400065FE0F /* SwiftTableSpaceDataSourceTests.swift in Sources */,
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 				21CB4D3C2061B5130065FE0F /* SwiftTableSpaceDouble.swift in Sources */,
 				21CB4D3B2061B4980065FE0F /* SwiftTableSpaceSourceDouble.swift in Sources */,
 				21CB4D4A2065BB240065FE0F /* SwiftTableSpaceDelegateTests.swift in Sources */,

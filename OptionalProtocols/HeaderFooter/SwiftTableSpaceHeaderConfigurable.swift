@@ -8,8 +8,21 @@
 import UIKit
 
 public protocol SwiftTableSpaceHeaderSizable {
+    
     func estimatedHeaderHeight(for tableView: UITableView) -> CGFloat
+    
     func headerHeight(for tableView: UITableView) -> CGFloat
+    
+    /// Called when header view is about to be displayed
+    func willDisplayHeader(view: UIView)
+    
+    /// Called when the specified header view was removed from the table
+    func didEndDisplayingHeader(view: UIView)
+}
+
+public extension SwiftTableSpaceHeaderSizable {
+    func willDisplayHeader(view: UIView) { }
+    func didEndDisplayingHeader(view: UIView) { }
 }
 
 public protocol SwiftTableSpaceHeaderConfigurable: SwiftTableSpaceHeaderSizable {

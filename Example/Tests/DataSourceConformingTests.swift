@@ -31,6 +31,22 @@ class SwiftTableSpaceDataSourceConformingTests: QuickSpec {
                     source = SwiftTableSpaceSourceDouble(spaces: [spaceOne, spaceTwo])
                     sut.spaceSource = source
                 }
+                describe("FooterDefaultTitleable", {
+                    it("passes title through delegate", closure: {
+                        let footerOne = "footerOne"
+                        let footerTwo = "footerTwo"
+                        
+                        spaceOne.defaultFooterTitle = footerOne
+                        spaceTwo.defaultFooterTitle = footerTwo
+                        
+                        testTitleForFooterInSection(0, equals: footerOne)
+                        testTitleForFooterInSection(1, equals: footerTwo)
+                    })
+                    func testTitleForFooterInSection(_ section: Int, equals title: String) {
+                        let footer = sut.tableView(UITableView(), titleForFooterInSection: section)
+                        expect(footer) == title
+                    }
+                })
                 
                 describe("HeaderDefaultTitleable", {
                     it("passes title through delegate", closure: {
@@ -85,6 +101,12 @@ class SwiftTableSpaceDataSourceConformingTests: QuickSpec {
                     source = SwiftTableSpaceSourceDouble(spaces: [space])
                     sut.spaceSource = source
                 }
+                describe("FooterDefaultTitleable", {
+                    it("returns nil", closure: {
+                        let title = sut.tableView(UITableView(), titleForFooterInSection: 0)
+                        expect(title).to(beNil())
+                    })
+                })
                 describe("HeaderDefaultTitleable", {
                     it("returns nil", closure: {
                         let title = sut.tableView(UITableView(), titleForHeaderInSection: 0)
