@@ -15,7 +15,7 @@ The example app has 3 tabs the each implement the same ToDo view controller. One
 
 * The massive view controller example uses ~ **215 lines** of code inside the view controller class.
 * The hybrid example that uses SwiftTableSpaces with the UITableViewDataSource and the SwiftTableViewDelegate manually uses ~ **130 lines** of code inside the view controller class.
-* The SwiftTableSpaces with SwiftTableSpaceManager view controller uses ~ **45 lines** of code inside the view controller class.
+* The SwiftTableSpaces with SwiftTableSpaceManager example uses ~ **45 lines** of code inside the view controller class.
 
 ## Requirements
 
