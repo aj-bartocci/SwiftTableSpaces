@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'SwiftTableSpaces'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of SwiftTableSpaces.'
+  s.summary          = 'A modular approach to UITableViews.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  A modular approach to UITableViews. This framework wraps the UITableViewDataSource and UITableViewDelegate protocols and splits their functionality into smaller logically related protocols. This promotes more readable code and aims to aid in modularizing the sections of a UITableView, instead of handling all sections in one place. Splitting each section of a tableview into TableSpaces allows you to keep all of the functionality for a specific section separate from the other sections. TableSpaces can easily be tested and can be reused, subclassed or extended.
                        DESC
 
   s.homepage         = 'https://github.com/aj-bartocci/SwiftTableSpaces'
