@@ -9,7 +9,7 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first. 
 
-The example app implement a table view that acts as a to do list. A user can add a todo to the list, which adds a cell to the 'ToDos' section. Within the 'ToDos' section users can mark a todo as completed or delete it from the list. When a todo is marked as completed it is added to the 'Completed ToDos' section. A user can then delete completed todos within the 'Completed ToDos' section. 
+The example app implements a table view that acts as a to do list. A user can add a todo to the list, which adds a cell to the 'ToDos' section. Within the 'ToDos' section users can mark a todo as completed or delete it from the list. When a todo is marked as completed it is added to the 'Completed ToDos' section. A user can then delete completed todos within the 'Completed ToDos' section. 
 
 The example app has 3 tabs the each implement the same ToDo view controller. One tab fully implements SwiftTableSpaces and manages the tableview with a SwiftTableSpaceManager. Another tab does not use SwiftTableSpaces at all and implements all functionality within a massive view controller. The last tab uses SwiftTableSpaces to modularize the tableview sections but does not use the SwiftTableSpaceManager, instead uses the tablespaces with the UITableViewDataSource and the SwiftTableViewDelegate manually. 
 
