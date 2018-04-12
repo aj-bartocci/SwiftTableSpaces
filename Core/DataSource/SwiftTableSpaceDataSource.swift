@@ -60,7 +60,7 @@ extension SwiftTableSpaceDataSource {
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         let space = spaceSource?.space(in: tableView, for: indexPath.section) as? Editable
-        space?.commitEditing(style: editingStyle, forRowAt: indexPath)
+        space?.commitEditing(style: editingStyle, forRowAt: indexPath, in: tableView)
     }
 }
 

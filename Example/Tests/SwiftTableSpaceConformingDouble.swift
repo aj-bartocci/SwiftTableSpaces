@@ -151,7 +151,7 @@ extension SwiftTableSpaceConformingDouble: SwiftTableSpaceEditable {
         return canEdit
     }
     
-    func commitEditing(style: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    func commitEditing(style: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath, in tableView: UITableView) {
         self.editingStyle = style
     }
     
