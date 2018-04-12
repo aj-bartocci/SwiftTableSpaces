@@ -22,11 +22,11 @@ public extension SwiftTableSpaceKeyboardListenerDelegate {
     
 }
 
-class SwiftTableSpaceKeyboardListener: NSObject {
+public class SwiftTableSpaceKeyboardListener: NSObject {
         
-    weak var delegate: SwiftTableSpaceKeyboardListenerDelegate?
+    public weak var delegate: SwiftTableSpaceKeyboardListenerDelegate?
     
-    override init() {
+    public override init() {
         super.init()
 //        Notification.Name.UIKeyboardWillChangeFrame
         self.setupObservers()
