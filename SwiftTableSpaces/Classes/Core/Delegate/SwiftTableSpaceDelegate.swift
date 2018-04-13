@@ -137,7 +137,7 @@ extension SwiftTableSpaceDelegate {
         if let space = spaceSource?.space(in: tableView, for: section) as? SwiftTableSpaceHeaderSizable {
             return space.estimatedHeaderHeight(for: tableView)
         } else {
-            return UITableViewAutomaticDimension
+            return CGFloat.leastNonzeroMagnitude
         }
     }
     
@@ -179,7 +179,7 @@ extension SwiftTableSpaceDelegate {
         if let space = spaceSource?.space(in: tableView, for: section) as? SwiftTableSpaceFooterSizable {
             return space.estimatedFooterHeight(for: tableView)
         } else {
-            return UITableViewAutomaticDimension
+            return CGFloat.leastNonzeroMagnitude
         }
     }
     

@@ -483,7 +483,7 @@ class SwiftTableSpaceDelegateConformingTests: QuickSpec {
                 describe("HeaderConfigurable", {
                     it("returns Automatic for estimatedHeight", closure: {
                         let estimate = sut.tableView(UITableView(), estimatedHeightForHeaderInSection: 0)
-                        expect(estimate) == UITableViewAutomaticDimension
+                        expect(estimate) == CGFloat.leastNonzeroMagnitude
                     })
                     
                     it("returns leastNonZero for headerHeight", closure: {
@@ -500,7 +500,7 @@ class SwiftTableSpaceDelegateConformingTests: QuickSpec {
                 describe("FooterConfigurable", {
                     it("returns Automatic for estimatedHeight", closure: {
                         let height = sut.tableView(UITableView(), estimatedHeightForFooterInSection: 0)
-                        expect(height) == UITableViewAutomaticDimension
+                        expect(height) == CGFloat.leastNonzeroMagnitude
                     })
                     it("returns leastNonZero for footerHeight", closure: {
                         let height = sut.tableView(UITableView(), heightForFooterInSection: 0)
