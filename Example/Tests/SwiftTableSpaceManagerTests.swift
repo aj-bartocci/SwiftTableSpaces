@@ -17,7 +17,7 @@ class SwiftTableSpaceManagerTests: QuickSpec {
         
         var interactor: SwiftTableSpaceSourceDouble!
         var tableView: UITableView!
-        var sut: SwiftTableSpaceManager<SwiftTableSpaceSourceDouble>!
+        var sut: SwiftTableSpaceManager!
         beforeEach {
             tableView = UITableView()
             let space = SwiftTableSpaceDouble(numberOfRows: 0)

@@ -11,14 +11,14 @@ import SwiftTableSpaces
 
 class ToDoViewController: ToDoBaseViewController {
     
-    private var manager: SwiftTableSpaceManager<ToDoTableViewInteractor>!
+    private var manager: SwiftTableSpaceManager!
+    private let interactor = ToDoTableViewInteractor()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let interactor = ToDoTableViewInteractor()
-        self.manager = SwiftTableSpaceManager(tableView: self.tableView, interactor: interactor)
+        self.manager = SwiftTableSpaceManager(tableView: tableView, interactor: interactor)
         self.manager.keyboardDelegate = self
     }
 
@@ -34,7 +34,7 @@ class ToDoViewController: ToDoBaseViewController {
         guard !text.replacingOccurrences(of: " ", with: "").isEmpty else {
             return
         }
-        self.manager.interactor.addToDo(text: text, tableView: self.tableView)
+        self.interactor.addToDo(text: text, tableView: self.tableView)
     }
 }
 

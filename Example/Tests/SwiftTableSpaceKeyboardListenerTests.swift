@@ -55,7 +55,7 @@ class SwiftTableSpaceKeyboardListenerTests: QuickSpec {
             func createWillNotification(name: Notification.Name, rect: CGRect, curve: UIViewAnimationCurve, duration: Double) -> Notification {
                 var notification = createDidNotification(name: name, rect: rect)
                 notification.userInfo?[UIKeyboardAnimationDurationUserInfoKey] = NSNumber(value: duration)
-                notification.userInfo?[UIKeyboardAnimationCurveUserInfoKey] = curve
+                notification.userInfo?[UIKeyboardAnimationCurveUserInfoKey] = NSNumber(value: curve.rawValue)
                 return notification
             }
         }
