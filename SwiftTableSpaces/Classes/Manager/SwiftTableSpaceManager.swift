@@ -11,7 +11,11 @@ public class SwiftTableSpaceManager {
     
     let dataSource = SwiftTableSpaceDataSource()
     let delegate = SwiftTableSpaceDelegate()
-    weak var tableView: UITableView?
+    weak var _tableView: UITableView!
+    public weak var tableView: UITableView! {
+        return _tableView
+    }
+    
     
     /**
      The interactor that will be used to do the configuration.
@@ -44,7 +48,7 @@ public class SwiftTableSpaceManager {
      */
     public init(tableView: UITableView, interactor: SwiftTableSpaceInteractor) {
         self.interactor = interactor
-        self.tableView = tableView
+        self._tableView = tableView
         self.dataSource.spaceSource = interactor
         self.delegate.spaceSource = interactor
         interactor.register(for: tableView)
