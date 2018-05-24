@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftTableSpaces'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'A modular approach to UITableViews.'
   s.swift_version    = '4'
 
