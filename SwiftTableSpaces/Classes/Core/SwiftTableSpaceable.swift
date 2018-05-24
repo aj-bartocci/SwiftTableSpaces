@@ -7,6 +7,7 @@
 
 import Foundation
 
-public protocol SwiftTableSpaceable: SwiftTableSpaceRegisterable, SwiftTableSpaceCellGettable {
+/// Choosing to force it as a class for equivelency 
+public protocol SwiftTableSpaceable: class, SwiftTableSpaceRegisterable, SwiftTableSpaceCellGettable {
     func numberOfRows() -> Int
 }
