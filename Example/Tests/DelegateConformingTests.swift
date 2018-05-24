@@ -511,6 +511,13 @@ class SwiftTableSpaceDelegateConformingTests: QuickSpec {
                         expect(footer).to(beNil())
                     })
                 })
+                
+                describe("ScrollDelegate", closure: {
+                    it("returns true for shouldScrollToTop", closure: {
+                        let shouldScroll = sut.scrollViewShouldScrollToTop(UIScrollView())
+                        expect(shouldScroll) == true
+                    })
+                })
             })
         }
     }

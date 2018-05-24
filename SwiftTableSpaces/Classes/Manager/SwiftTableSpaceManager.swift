@@ -15,7 +15,14 @@ public class SwiftTableSpaceManager {
     public weak var tableView: UITableView! {
         return _tableView
     }
-    
+    public weak var scrollDelegate: UIScrollViewDelegate? {
+        get {
+            return delegate.scrollDelegate
+        }
+        set {
+            delegate.scrollDelegate = newValue
+        }
+    }
     
     /**
      The interactor that will be used to do the configuration.

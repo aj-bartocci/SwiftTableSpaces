@@ -9,6 +9,7 @@ import Foundation
 
 class SwiftTableSpaceDelegate: NSObject, UITableViewDelegate {
     weak var spaceSource: SwiftTableSpaceSource?
+    weak var scrollDelegate: UIScrollViewDelegate?
 }
 
 extension SwiftTableSpaceDelegate {
@@ -29,6 +30,7 @@ extension SwiftTableSpaceDelegate {
         let space = spaceSource?.space(in: tableView, for: indexPath.section) as? Selectable
         space?.didSelectCell(at: indexPath, in: tableView)
     }
+    
 }
 
 extension SwiftTableSpaceDelegate {
@@ -225,5 +227,53 @@ extension SwiftTableSpaceDelegate {
     func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
         let space = spaceSource?.space(in: tableView, for: indexPath.section) as? SwiftTableSpaceActionable
         space?.accessoryButtonTappedAt(indexPath: indexPath, in: tableView)
+    }
+}
+
+extension SwiftTableSpaceDelegate {
+    // scroll delegate
+    
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        scrollDelegate?.scrollViewWillBeginDragging?(scrollView)
+    }
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        scrollDelegate?.scrollViewWillEndDragging?(scrollView, withVelocity: velocity, targetContentOffset: targetContentOffset)
+    }
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        scrollDelegate?.scrollViewDidEndDragging?(scrollView, willDecelerate: decelerate)
+    }
+    func scrollViewWillBeginZooming(_ scrollView: UIScrollView, with view: UIView?) {
+        scrollDelegate?.scrollViewWillBeginZooming?(scrollView, with: view)
+    }
+    func scrollViewDidEndZooming(_ scrollView: UIScrollView, with view: UIView?, atScale scale: CGFloat) {
+        scrollDelegate?.scrollViewDidEndZooming?(scrollView, with: view, atScale: scale)
+    }
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return scrollDelegate?.viewForZooming?(in: scrollView)
+    }
+    func scrollViewDidZoom(_ scrollView: UIScrollView) {
+        scrollDelegate?.scrollViewDidZoom?(scrollView)
+    }
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        scrollDelegate?.scrollViewDidScroll?(scrollView)
+    }
+    func scrollViewDidScrollToTop(_ scrollView: UIScrollView) {
+        scrollDelegate?.scrollViewDidScrollToTop?(scrollView)
+    }
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        scrollDelegate?.scrollViewDidEndDecelerating?(scrollView)
+    }
+    func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
+        scrollDelegate?.scrollViewWillBeginDecelerating?(scrollView)
+    }
+    func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
+        scrollDelegate?.scrollViewDidEndScrollingAnimation?(scrollView)
+    }
+    func scrollViewShouldScrollToTop(_ scrollView: UIScrollView) -> Bool {
+        return scrollDelegate?.scrollViewShouldScrollToTop?(scrollView) ?? true
+    }
+    @available(iOS 11.0, *)
+    func scrollViewDidChangeAdjustedContentInset(_ scrollView: UIScrollView) {
+        scrollDelegate?.scrollViewDidChangeAdjustedContentInset?(scrollView)
     }
 }
