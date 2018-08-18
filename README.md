@@ -1,6 +1,5 @@
 # SwiftTableSpaces
 
-[![CI Status](http://img.shields.io/travis/AJ Bartocci/SwiftTableSpaces.svg?style=flat)](https://travis-ci.org/AJ Bartocci/SwiftTableSpaces)
 [![Version](https://img.shields.io/cocoapods/v/SwiftTableSpaces.svg?style=flat)](http://cocoapods.org/pods/SwiftTableSpaces)
 [![License](https://img.shields.io/cocoapods/l/SwiftTableSpaces.svg?style=flat)](http://cocoapods.org/pods/SwiftTableSpaces)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftTableSpaces.svg?style=flat)](http://cocoapods.org/pods/SwiftTableSpaces)
