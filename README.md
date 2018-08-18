@@ -10,7 +10,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 The example app implements a table view that acts as a to do list. A user can add a todo to the list, which adds a cell to the 'ToDos' section. Within the 'ToDos' section users can mark a todo as completed or delete it from the list. When a todo is marked as completed it is added to the 'Completed ToDos' section. A user can then delete completed todos within the 'Completed ToDos' section. 
 
-The example app has 3 tabs the each implement the same ToDo view controller. One tab fully implements SwiftTableSpaces and manages the tableview with a SwiftTableSpaceManager. Another tab does not use SwiftTableSpaces at all and implements all functionality within a massive view controller. The last tab uses SwiftTableSpaces to modularize the tableview sections but does not use the SwiftTableSpaceManager, instead uses the tablespaces with the UITableViewDataSource and the SwiftTableViewDelegate manually. 
+The example app has 3 tabs the each implement the same ToDo view controller. One tab fully implements SwiftTableSpaces and manages the tableview with a SwiftTableSpaceManager. Another tab does not use SwiftTableSpaces at all and implements all functionality within a massive view controller. The last tab uses SwiftTableSpaces to modularize the tableview sections but does not use the SwiftTableSpaceManager, instead it uses the tablespaces with the UITableViewDataSource and the UITableViewDelegate manually. 
 
 * The massive view controller example uses ~ **215 lines** of code inside the view controller class.
 * The hybrid example that uses SwiftTableSpaces with the UITableViewDataSource and the SwiftTableViewDelegate manually uses ~ **130 lines** of code inside the view controller class.
@@ -18,7 +18,7 @@ The example app has 3 tabs the each implement the same ToDo view controller. One
 
 ## Requirements
 
-A good understanding of how UITableViews work and familiarity with the UITableViewDataSource and SwiftTableViewDelegate
+A good understanding of how UITableViews work and familiarity with the UITableViewDataSource and UITableViewDelegate
 
 ## Installation
 
