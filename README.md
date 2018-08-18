@@ -13,7 +13,7 @@ The example app implements a table view that acts as a to do list. A user can ad
 The example app has 3 tabs the each implement the same ToDo view controller. One tab fully implements SwiftTableSpaces and manages the tableview with a SwiftTableSpaceManager. Another tab does not use SwiftTableSpaces at all and implements all functionality within a massive view controller. The last tab uses SwiftTableSpaces to modularize the tableview sections but does not use the SwiftTableSpaceManager, instead it uses the tablespaces with the UITableViewDataSource and the UITableViewDelegate manually. 
 
 * The massive view controller example uses ~ **215 lines** of code inside the view controller class.
-* The hybrid example that uses SwiftTableSpaces with the UITableViewDataSource and the SwiftTableViewDelegate manually uses ~ **130 lines** of code inside the view controller class.
+* The hybrid example that uses SwiftTableSpaces with the UITableViewDataSource and the UITableViewDelegate manually uses ~ **130 lines** of code inside the view controller class.
 * The SwiftTableSpaces with SwiftTableSpaceManager example uses ~ **45 lines** of code inside the view controller class.
 
 ## Requirements
